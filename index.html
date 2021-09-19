@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="d-flex align-items-center">
+
+    <main class="container h-75" id="main">
+        <div class="row h-100">
+            <div class="col-sm-5 col-12 p-5 d-flex flex-column justify-content-end position-relative" id="img-div">
+                <h1 class="mb-4 " id="title">free Code Camp</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform</p>
+                <img class="position-absolute h-100 w-100 top-0 start-0" src="img/mian-image.png" alt="" id="image">
+
+            </div>
+            <div class="form col-sm-7 col-12 h-100 overflow-auto" id="form">
+                <form class="p-5 d-grid gap-4" id="survey-form" action="">
+                    <label class="w-100" for="name" id="name-label">
+                        Name
+                        <input class="d-block w-100 py-2 px-3 mt-2" type="text" placeholder="Enter your name" id="name"
+                            required>
+                    </label>
+                    <label class="w-100 " for="email" id="email-label">
+                        Email Address
+                        <input class="d-block w-100 py-2 px-3 mt-2" type="email" placeholder="Enter your name" id="email"
+                            required>
+                    </label>
+                    <label class="w-100 " for="number" id="number-label">
+                        Age
+                        <input class="d-block w-100 py-2 px-3 mt-2" type="number" placeholder="Enter your name" min="10"
+                            max="99" id="number">
+                    </label>
+                    <label class="w-100 " for="role">
+                        Which option best describe your current role
+                        <select class="d-block w-100 py-2 px-3 mt-2" name="" id="dropdown">
+                            <option hidden selected value="">Select current role</option>
+                            <option value="">Student</option>
+                            <option value="">Full-Time Job</option>
+                            <option value="">Full-Time Learner</option>
+                            <option value="">Prefer not to say</option>
+                            <option value="">Other</option>
+                        </select>
+                    </label>
+                    <div class="radios w-100">
+                        <p class="label">Would you recommend freeCodeCamp to your friends</p>
+                        <label for="definitely" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="radio" value="definitely" name="user-recommend">
+                            Definitely
+                        </label>
+                        <label for="maybe" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="radio" value="maybe" name="user-recommend">
+                            Maybe
+                        </label>
+                        <label for="not-sure" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="radio" value="not-sure" name="user-recommend">
+                            Not Sure
+                        </label>
+
+                    </div>
+                    <label class="w-100 " for="name">
+                        What is your favorite feature of freeCodeCamp?
+                        <select class="d-block w-100 py-2 px-3 mt-2" name="" id="dropdown">
+                            <option hidden selected value="">Select an option</option>
+                            <option value="">Challenges</option>
+                            <option value="">Projects</option>
+                            <option value="">Community</option>
+                            <option value="">Open Source</option>
+                        </select>
+                    </label>
+                    <div class="checks w-100">
+                        <p class="label">What would you like to see improved?</p>
+
+                        <label for="front-end-projects" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="checkbox" value="front-end-projects" id="front-end-projects" name="feature">
+                            Front-end Projects
+                        </label>
+                        <label for="back-end-projects" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="checkbox" value="front-end-projects" id="back-end-projects" name="feature">
+                            Back-end Projects
+                        </label>
+                        <label for="data-visualization" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="checkbox" value="front-end-projects" id="data-visualization" name="feature">
+                            Data Visualization
+                        </label>
+                        <label for="challenges" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="checkbox" value="front-end-projects" id="challenges" name="feature">
+                            Challenges
+                        </label>
+                        <label for="open-source-community" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="checkbox" value="front-end-projects" id="open-source-community" name="feature">
+                            Open Source Community
+                        </label>
+                        <label for="gitter-help-rooms" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="checkbox" value="front-end-projects" id="gitter-help-rooms" name="feature">
+                            Gitter help rooms
+                        </label>
+                        <label for="videos" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="checkbox" value="front-end-projects" id="videos" name="feature">
+                            Videos
+                        </label>
+                        <label for="city-meetups" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="checkbox" value="front-end-projects" id="city-meetups" name="feature">
+                            City Meetups
+                        </label>
+                        <label for="wiki" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="checkbox" value="front-end-projects" id="wiki" name="feature">
+                            Wiki
+                        </label>
+                        <label for="forum" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="checkbox" value="front-end-projects" id="forum" name="feature">
+                            Forum
+                        </label>
+                        <label for="additional-courses" class=" d-flex align-items-center gap-2">
+                            <input selected class="" type="checkbox" value="front-end-projects" id="additional-courses" name="feature">
+                            Additional Courses
+                        </label>
+
+                        
+                    </div>
+                    <label class="w-100" for="">
+                        Any Comments or SUggestions?
+                        <textarea name="" id="" rows="8" class="d-block w-100 py-2 px-3 mt-2"
+                            placeholder="Enter your comment here">
+                        </textarea>
+                    </label>
+                    <button class="w-100 py-2" type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

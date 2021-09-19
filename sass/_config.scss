@@ -1,0 +1,55 @@
+//import font
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;800&family=Lato:wght@400;700&display=swap');
+/*
+font families
+font-family: 'JetBrains Mono', monospace;
+400, 500, 800
+font-family: 'Lato', sans-serif;
+400, 700
+*/
+
+//colors
+$white: #fff;
+$gray: #6d6d6d;
+$submit: #34BE53;
+
+
+body{
+    height: 100vh;
+    background: url(../img/mesh-bg.png);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+    font-size: Max(5vw, 3rem);
+    line-height: 90%;
+}
+button{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    border: none;
+}
+label,
+form .label{
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: Max(1.2vw, 1.3rem);
+}
+input,
+form .radios label,
+form .checks label,
+form select{
+    font-family: 'Lato', sans-serif;
+    font-size: Max(1vw, 1rem);
+    font-weight: 400;
+
+    //color: $gray;
+}
+
+    

@@ -1,0 +1,44 @@
+@import 'config';
+
+@media (max-width: 575.98px) {
+    .h-75{
+        height: 100% !important;
+    }
+
+}
+main{
+
+    #img-div{
+        // background: url(../img/mian-image.png);
+        // background-position: center;
+        // background-size: cover;
+
+        #title{
+            width: min-content !important;
+            color: $white !important;
+        }
+        #description{
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-size: Max(.9vw, 1rem);
+            
+            color: $white !important;
+        }
+        #image{
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+    #form{
+        // background: url(../img/form-bg.jpg);
+        // background-position: center;
+        // background-size: cover;
+        background: $white;
+
+        button{
+            background: $submit;
+            color: $white;
+        }
+    }
+    
+}
